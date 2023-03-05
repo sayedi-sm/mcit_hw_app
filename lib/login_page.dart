@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({Key? key}) : super(key: key);
+  const LoginPage({Key? key}) : super(key: key);
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -192,7 +192,7 @@ class _LoginPageState extends State<LoginPage> {
                         _isLoading = true;
                       });
                       Future.delayed(
-                        Duration(seconds: 3),
+                        const Duration(seconds: 2),
                         () {
                           setState(() {
                             _isLoading = false;
@@ -208,8 +208,8 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     child: _isLoading
-                        ? CircularProgressIndicator(color: Colors.white,)
-                        : Text('Continue'),
+                        ? const CircularProgressIndicator(color: Colors.white,)
+                        : const Text('Continue'),
                   ),
                   const SizedBox(height: 16),
                   Row(
