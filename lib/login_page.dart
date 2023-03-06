@@ -208,7 +208,9 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     child: _isLoading
-                        ? const CircularProgressIndicator(color: Colors.white,)
+                        ? const CircularProgressIndicator(
+                            color: Colors.white,
+                          )
                         : const Text('Continue'),
                   ),
                   const SizedBox(height: 16),
